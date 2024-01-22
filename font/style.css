@@ -1,0 +1,12 @@
+@font-face {
+font-family: 'Ombre Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Ombre Rosse Regular'), url('Ombre Rosse.woff') format('woff');
+}
+@font-face {
+font-family: 'Ombre 2D Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Ombre Rosse 2D Regular'), url('Ombre Rosse 2D.woff') format('woff');
+}

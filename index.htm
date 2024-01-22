@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!------------------------------|Meta|------------------------------>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------------------|Title & Favicon|------------------------------>
+    <title>Music Player</title>
+    <!------------------------------|Css|------------------------------>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./font/style.css">
+</head>
+<body>
+    <!------------------------------|Main|------------------------------>
+    <main>
+        <div class="player-box">
+            <div class="img-music">
+                <p class="font-text">PLAYING NOW</p>
+                <img src="./img/m1.jpg">
+            </div>
+            <div class="control-music">
+                <div class="properties">
+                    <p class="font-title">ZANG BEZANI</p>
+                    <p class="font-text">MEHDI AHMADVAND</p>
+                </div>
+                <div class="slide-box">
+                    <div class="time-box">
+                        <p class="font-text">00:00</p>
+                        <p class="font-text">05:04</p>
+                    </div>
+                    <audio src="./media/Mehdi.mp3"></audio>
+                    <div class="range-slide">
+                        <div class="thumb"></div>
+                        <div class="range"></div>
+                    </div>
+                </div>
+                <ul class="btn-box">
+                    <li id="previous">
+                        <i class="fa-solid fa-backward"></i>
+                    </li>
+                    <li id="play">
+                        <i class="fa-solid fa-play"></i>
+                    </li>
+                    <li id="next">
+                        <i class="fa-solid fa-forward"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main> 
+</body>
+<!------------------------------|Js|------------------------------>
+<script src="./js/script.js"></script>
+</html>

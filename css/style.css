@@ -1,0 +1,185 @@
+/*------------------------------|Var|------------------------------*/
+/*------------------------------|Tag-Style|------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #26282B;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*------------------------------|General Class|------------------------------*/
+.middle {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.font-title {
+  font-family: "Ombre Regular";
+  font-size: 26px;
+  font-weight: 600;
+  color: #A7A9AA;
+}
+
+.font-text {
+  font-family: "Ombre Regular";
+  font-size: 18px;
+  font-weight: 300;
+  color: #707174;
+}
+
+/*------------------------------|Main|------------------------------*/
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+main div.player-box {
+  width: 350px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 34px;
+  background-color: #2E3237;
+  box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.3), -7px -7px 15px 0px rgb(80, 80, 80);
+}
+main div.player-box div.img-music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+main div.player-box div.img-music img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  animation: img-music 20s infinite linear;
+  background-color: #2E3237;
+  box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.3), -4px -4px 5px 7px rgb(80, 80, 80);
+}
+main div.player-box div.control-music {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+main div.player-box div.control-music div.properties {
+  text-align: center;
+}
+main div.player-box div.control-music div.slide-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  gap: 16px;
+}
+main div.player-box div.control-music div.slide-box div.time-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+main div.player-box div.control-music div.slide-box div.range-slide {
+  width: 100%;
+  height: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main div.player-box div.control-music div.slide-box div.range-slide div.thumb {
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #BF8A10;
+  border: 7px solid #2E3237;
+  border-radius: 100%;
+  box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, 0.5), -4px -4px 5px 0px rgba(80, 80, 80, 0.4);
+}
+main div.player-box div.control-music div.slide-box div.range-slide div.range {
+  width: 0;
+  height: 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #D43C0B, #BF8A10);
+}
+main div.player-box div.control-music ul.btn-box {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+main div.player-box div.control-music ul.btn-box li {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #707174;
+  box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.3), -7px -7px 15px 0px rgb(80, 80, 80), inset -1px -1px 2px 0px rgba(0, 0, 0, 0.3), inset 1px 1px 2px 0px rgb(80, 80, 80);
+  background-color: #2E3237;
+  border: 2px solid #2E3237;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main div.player-box div.control-music ul.btn-box li:active {
+  box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.3), -7px -7px 15px 0px rgb(80, 80, 80), inset 4px 4px 8px 0px rgba(0, 0, 0, 0.3), inset -4px -4px 8px 0px rgb(80, 80, 80);
+  border: 2px solid #444;
+  text-shadow: 0px 0px 2px rgba(112, 113, 116, 0.3);
+}
+main div.player-box div.control-music ul.btn-box li:nth-child(2) {
+  background: linear-gradient(90deg, #D43C0B, #BF8A10);
+  color: #E0E0E0;
+}
+main div.player-box div.control-music ul.btn-box li:nth-child(2):active {
+  box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.3), -7px -7px 15px 0px rgb(80, 80, 80), inset 4px 4px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------------|Animation|------------------------------*/
+@keyframes img-music {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
